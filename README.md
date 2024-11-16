@@ -17,8 +17,8 @@ build.zig
         },
         .macos => {
             if (b.lazyDependency("system_sdk", .{})) |system_sdk| {
-                compile_step.addLibraryPath(system_sdk.path("macos12/usr/lib"));
-                compile_step.addFrameworkPath(system_sdk.path("macos12/System/Library/Frameworks"));
+                compile_step.addLibraryPath(system_sdk.path("macos13/usr/lib"));
+                compile_step.addFrameworkPath(system_sdk.path("macos13/System/Library/Frameworks"));
             }
         },
         .linux => {
